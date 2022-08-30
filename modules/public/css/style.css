@@ -66,4 +66,9 @@ textarea {
 .form-message-success,
 .error-message-form {
     display: none;
+    text-align: center;
+    padding-top: 60px;
+    justify-content: center;
+    background-color: #f4f4f4;
 }
+

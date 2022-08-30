@@ -271,7 +271,55 @@ a {
                         <h3 class="heading-large-2">Get in Contact Today!</h3>
                         <p class="body-paragraphy light form-left-text contact-area">For any queries, please fill in the form and one of the team will reply within 24 hours.<br></p>
                       </div>
-                      <div class="right-form-block"></div>
+                      <div class="right-form-block">
+                        <div class="form-wrapper form-block">
+                          <div class="form-container" id="form-container">
+                              <form action="" id="contact-us-form" class="contact-form">
+                                  <h2>Contact Us Here</h2>
+                                  <div class="form-field name-field">
+                                      <input type="text" name="name" id="name" placeholder="Enter your full name">
+                                      <small></small><br>
+                                  </div>
+                                  <div class="form-field telephone-field">
+                                      <input type="tel" name="telephpone" id="telephone" placeholder="Enter a number to contact you on">
+                                      <small></small><br>
+                                  </div>
+                                  <div class="form-field email-field">
+                                      <input type="text" name="email" id="email" placeholder="Enter your email">
+                                      <small></small><br>
+                                  </div>
+                                  <label for="service-list">Choose the service you require <br>
+                                  If you require more than one please mention exactly what you would 
+                                  like in the message</label><br>
+                                  <select name="service-list" id="service-list">
+                                      <option value="outsourced-credit-control">Outsourced Credit Control</option>
+                                      <option value="credit-checking">Credit Checking</option>
+                                      <option value="debt-recovery">Debt Recovery &amp; Collections</option>
+                                      <option value="process-improvement">Process Improvement</option>
+                                      <option value="extra-option">I want something that is not listed..</option>
+                                  </select><br>
+                                  <textarea maxlength="5000" rows="" cols="" data-name="message" id="your-message"
+                                      placeholder="Your message.."></textarea><br>
+                                      <div class="consent-button">
+                                          <label for="consent-button">I consent to data blah</label>
+                                          <input type="checkbox" name="consent-button" id="consent-button">
+                                      </div>
+                                  <div class="button-holder">
+                                      <input type="submit" class="submit-button form-button" name="submit-button" id="submit-button">
+                                      <input type="reset" class="reset-button form-button" name="reset-button" id="reset-button">
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="form-message-success" id="success">
+                              <div class="text-size-regular">Thank you! Your message has been received!<br>
+                              Someone will be in touch within 24 hours</div>
+                          </div>
+                          <div class="error-message-form form-fail" id="failed">
+                              <div>Oops! Something went wrong while submitting the form.</div>
+                          </div>
+                      </div>
+                      <script src="/modules/public/js/app.js"></script>
+                      </div>
                     </div>
                   </div>
                 </form>
