@@ -1,0 +1,33 @@
+<html>
+    <link rel="stylesheet" href="/css/webflow.css">
+    <link rel="stylesheet" href="/css/ocreditcontrol.webflow.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <body>
+        <script src="/modules/js/form.js"></script>
+        <div class="form-wrapper form-block">
+            <form action="" id="contact-us-form">
+                <input type="text" id="name"  value="name" placeholder="Enter your name">
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+                <input type="tel" name="telephone" id="telephone" placeholder="Please enter your phone number">
+                <select name="service-list" id="service-list">
+                    <option value="occ-credit">Outsourced Credit Control</option>
+                    <option value="credit-checking">Credit Checking</option>
+                    <option value="debt-recovery">Debt Recovery &amp; Collections</option>
+                    <option value="process-improvement">Process Improvement</option>
+                    <option value="extra-option">I want something that is not listed..</option>
+                </select>
+                <textarea maxlength="5000" rows="" cols="" data-name="message" id="your-message" placeholder="Your message.."></textarea>
+                <div class="button-holder">
+                    <input type="submit" name="submit-button" id="submit-button">
+                    <input type="reset" name="reset-button" id="reset-button">
+                </div>
+            </form>
+            <div class="form-message-success">
+                <div class="text-size-regular">Thank you! Your message has been received!</div>
+            </div>
+            <div class="error-message-form form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+        </div>
+    </body>
+</html>
