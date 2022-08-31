@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
 	// res.send("Hello");
-	res.send(__dirname + "/html/");
+	res.send(__dirname + "/html");
 });
 
 app.post("/", (req, res) => {
