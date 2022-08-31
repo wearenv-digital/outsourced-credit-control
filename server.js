@@ -11,10 +11,10 @@ var htmlPath = path.join(__dirname, "/html");
 app.use(express.static(htmlPath));
 app.use(express.json());
 
-// app.get("/", (req, res) => {
-// 	// res.send("Hello");
-// 	res.sendFile(__dirname + "/public/contactform.html");
-// });
+app.get("/", (req, res) => {
+	// res.send("Hello");
+	res.send(__dirname + "/html/");
+});
 
 app.post("/", (req, res) => {
 	console.log(req.body);
