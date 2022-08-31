@@ -1,3 +1,4 @@
+var path = require("path");
 const express = require("express");
 const app = express();
 
@@ -5,8 +6,9 @@ const nodemailer = require("nodemailer");
 
 const PORT = process.env.PORT || 5500; // CHANGE TO WHATEVER
 // middleware
-
+var htmlPath = path.join(__dirname, "html");
 app.use(express.static("public"));
+app.use(express.static(htmlPath));
 app.use(express.json());
 
 app.get("/", (req, res) => {
